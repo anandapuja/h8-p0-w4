@@ -20,7 +20,7 @@ function cariModus(arr) {
     for( i = 0; i < arr.length; i++ ) {
         for( j = 0; j < arr.length; j++ ) {
             if( arr[i] == arr[j] && i != j ) {
-                hasil.push(arr[i]);
+                hasil[i].push(arr[i]);
             }
             else {
                 kosong = -1;
