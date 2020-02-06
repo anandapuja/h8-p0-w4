@@ -2,7 +2,33 @@
 
 function angkaPrima(angka) {
    
-        
+    // REVISI
+    for( i = 2; i < angka; i++ ) {
+        if( angka % i === 0 ) {
+            return false;
+        }
+    }
+    for( i = 2; i < angka; i++ ) {
+        if( angka % i !== 0 ) {
+            return true;
+        }
+    }
+    
+  }
+  
+// TEST CASES
+console.log(angkaPrima(3)); // true
+console.log(angkaPrima(7)); // true
+console.log(angkaPrima(6)); // false
+console.log(angkaPrima(23)); // true
+console.log(angkaPrima(33)); // false
+
+// TEST CASE DARI INSTRUKTUR TAUFIQ
+console.log(angkaPrima(121)); // false
+console.log(angkaPrima(361)); // false
+
+    // CARA SEBELUMNYA, DINILAI HARDCODE
+    /*
         if( angka % 2 === 0 && angka !== 2 ) {
             return false;
         }
@@ -20,13 +46,5 @@ function angkaPrima(angka) {
         }
         else {
             return true;
-        }
-    
-  }
-  
-// TEST CASES
-console.log(angkaPrima(3)); // true
-console.log(angkaPrima(7)); // true
-console.log(angkaPrima(6)); // false
-console.log(angkaPrima(23)); // true
-console.log(angkaPrima(33)); // false
+        }  
+    */
