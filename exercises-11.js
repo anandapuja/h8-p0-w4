@@ -15,7 +15,10 @@ function shoppingTime(memberId, money) {
         }
     }
 
-    if( memberId === '' || money === undefined ) {
+    if( memberId === '' ) {
+        return 'Mohon maaf, toko X hanya berlaku untuk member saja';
+    }
+    else if( money === undefined && memberId === undefined ) {
         return 'Mohon maaf, toko X hanya berlaku untuk member saja';
     }
     else if( money < harga[4] ) {
