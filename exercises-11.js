@@ -9,7 +9,7 @@ function shoppingTime(memberId, money) {
     var beli = [];
 
     for( i = 0; i < harga.length; i++ ) {
-        if( money > harga[i] ) {
+        if( money >= harga[i] ) {
             kembalian = kembalian - harga[i];
             beli.push(barang[i]);
         }
