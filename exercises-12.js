@@ -1,3 +1,5 @@
+// Logic Challenge - Toko X
+
 function countProfit(shoppers) {
   let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
                      ['Baju Zoro', 500000, 2],
